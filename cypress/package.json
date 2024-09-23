@@ -22,12 +22,12 @@
   },
   "dependencies": {
     "@ngneat/falso": "^7.2.0",
-    "@sinonjs/fake-timers": "^13.0.1",
+    "@sinonjs/fake-timers": "^13.0.2",
     "cypress": "^13.14.2",
     "cypress-otp": "^1.0.3",
     "cypress-real-events": "^1.13.0",
     "lodash": "catalog:",
     "nanoid": "catalog:",
-    "start-server-and-test": "^2.0.7"
+    "start-server-and-test": "^2.0.8"
   }
 }
