@@ -214,6 +214,9 @@ export class Server extends AbstractServer {
 
 		if (!this.globalConfig.taskRunners.disabled) {
 			setupRunnerHandler(restEndpoint, app);
+			const { TaskRunnerProcess } = await import('@/runners/task-runner-process');
+			const runnerProcess = Container.get(TaskRunnerProcess);
+			await runnerProcess.start();
 		}
 
 		const push = Container.get(Push);

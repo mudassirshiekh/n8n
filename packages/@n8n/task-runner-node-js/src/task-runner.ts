@@ -73,7 +73,6 @@ export class TaskRunner {
 				authorization: `Bearer ${grantToken}`,
 			},
 		});
-		console.log('1');
 		this.ws.addEventListener('message', this._wsMessage);
 		this.ws.addEventListener('close', this.stopTaskOffers);
 	}
